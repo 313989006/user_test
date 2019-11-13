@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.stsr.service")
-public class GreateTestApplication {
+public class UserTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GreateTestApplication.class, args);
+		SpringApplication.run(UserTestApplication.class, args);
 	}
 }
