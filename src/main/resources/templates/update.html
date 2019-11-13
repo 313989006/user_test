@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>用户修改页面</title>
+</head>
+
+<body th:style="'background-image:url(' + 'beijing.jpg);background-repeat: no-repeat;background-size: 100% 100%;'">
+    <h1 style="padding-left:100px;">修改用户：</h1>
+    <br/>
+    <form style="padding-left:100px;" action="#" th:action="@{/user/update}" th:object="${user}" method="post">
+        <p>姓名: <input  type="text" th:field="*{name}" /></p>
+        <p>部门: <input type="text" th:field="*{company}" /></p>
+        <p>手机号码: <input type="text" th:field="*{phone}" /></p>
+        <p>邮箱: <input type="text" th:field="*{email}" /></p>
+        <p><input type="submit" value="提交" /> <input type="reset" value="重置" /></p>
+    </form>
+
+</body>
+</html>
